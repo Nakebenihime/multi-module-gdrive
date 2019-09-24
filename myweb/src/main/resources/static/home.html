@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" http-equiv="Content-Type" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link href="webjars/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="webjars/jquery/3.4.1/jquery.min.js"></script>
+    <script src="webjars/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <title>Google Drive Uploader</title>
+</head>
+<body class="container" style="background: #fff;">
+<div class="text-center">
+    <div>
+        <h1 class="display-4">GDrive File Upload Manager</h1>
+        <p class="lead text-muted">You are now logged in via Google OAuth</p>
+    </div>
+    <hr class="my-4">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="progress" id="progressBar">
+            <div class="progress-bar bg-success" id="bar" role="progressbar"></div>
+        </div>
+
+        <form id="imageForm" method="POST" enctype="multipart/form-data">
+            <div class="form-group custom-file">
+                <input type="file" id="files" name="files" class="custom-file-input" required multiple> <label
+                    class="custom-file-label" for="files">Choose file</label>
+            </div>
+            <br><br>
+            <div class="form-group">
+                <input class="btn btn-warning" id="uploadButton" type="button" value="Upload" /> <input class="btn btn-danger"
+                                                                                                        id="resetButton" type="button" value="Reset" />
+            </div>
+            <output id="selectedFiles"></output>
+        </form>
+    </div>
+</div>
+</body>
+</html>
